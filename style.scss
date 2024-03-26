@@ -1,7 +1,7 @@
-@use "variables" as *;
-@use 'atoms';
-@use 'molecules';
-@use 'organisms';
+@use "atomic/variables" as *;
+@use 'atomic/atoms';
+@use 'atomic/molecules';
+@use 'atomic/organisms';
 
 
 
