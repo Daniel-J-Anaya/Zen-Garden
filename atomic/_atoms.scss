@@ -1,0 +1,70 @@
+@use 'variables' as *;
+
+@mixin set-flex($direction: row, $wrap: wrap) {
+  display: flex;
+  flex-flow: $direction $wrap;
+}
+
+h2,h3,h4 {
+  font-family: $fonts-headline;
+  margin: 0;
+}
+
+h1 {
+  background-color: rgba($accent2, 0.7);
+  font-family: $fonts-headline;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: $text-light;
+  display: inline-block;
+  margin-bottom: 1em;
+  padding: 0.4em;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+h2 {
+  color: $text-dark;
+  font-size: 4em;
+  text-shadow: 2px 2px 1px $background-color;
+  letter-spacing: 2px;
+  line-height: 1em;
+  text-align: center;
+  padding: 10px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+}
+
+a {
+  color: $text-dark;
+}
+
+a:hover {
+  color: $accent2;
+  font-weight: 900;
+}
+
+.page-wrapper {
+  background-color: $background-color;
+}
+
+.design-selection, .design-archives, .zen-resources {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
