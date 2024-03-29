@@ -209,14 +209,22 @@ footer a:visited {
   text-align: left;
 }
 
+.main p {
+  padding: 0 20px 0 20px;
+}
+
+.main h3 {
+  padding: 0 10px 10px 10px;
+}
+
 .main div {
   width: 80%;
   margin-left: 10px;
   background: linear-gradient(#446aa070, #d8dbe2);
   border: ridge 5px #000000;
-}
-
-.main div[role="article"]:nth-child(even) {
+  }
+  
+.main div[role=article]:nth-child(even) {
   justify-self: right;
   margin-left: 0;
   margin-right: 10px;
