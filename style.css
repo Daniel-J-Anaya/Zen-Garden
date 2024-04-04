@@ -8,19 +8,26 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 /* basic elements */
+
+/* fonts */
+
+@import url("https://use.typekit.net/pbj4csc.css");
+
 html {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: "ysans-std", sans-serif;
 }
 
 .main p {
   margin-top: 0;
   text-align: justify;
+  font-family: "mandrel-normal", serif;
+  font-size: 18px;
 }
 
 .main h3 {
-  font: "Times New Roman", Verdana, Arial, sans-serif;
   letter-spacing: 1px;
   margin-bottom: 0;
   color: #446aa0;
@@ -125,7 +132,7 @@ footer {
 }
 
 .main h3 {
-  padding: 0 10px 10px 10px;
+  padding: 0 20px 10px 20px;
 }
 
 .main div {
@@ -182,7 +189,10 @@ footer {
 
 /* Sidebar and Header by Daniel Anaya */
 html {
-	background-image: url(image/zenGardenBackground.png);
+	background-image: url(image/zenGardenBackground.jpg);
+  background-postion: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
@@ -192,7 +202,11 @@ body {
 header {
 	display: flex;
 	justify-content: space-around;
-	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#zen-supporting h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .sidebar {
@@ -200,7 +214,6 @@ header {
 	position: absolute;
 	top: 0;
 	right: 0;
-	background-color: rgba(255, 255, 255, 0.5);
   }
   
   .sidebar .wrapper {
@@ -209,6 +222,8 @@ header {
 	padding: 10px;
 	margin-top: 150px;
 	width: 150px;
+  background-color: rgba(255,255,255,.7);
+  border-radius: 15px;
   }
   
   .sidebar h3.select {
@@ -268,7 +283,7 @@ footer {
 }
 
 footer a {
-  color: #8997A7;
+  color: #d8dbe2;
   background-color: #131E36;
   border-radius: 16px;
   text-decoration: none;
