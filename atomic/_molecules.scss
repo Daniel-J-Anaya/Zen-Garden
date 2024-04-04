@@ -30,3 +30,24 @@ header {
     background-repeat: no-repeat;
     padding: 10px;
 }
+
+/* ----- Jordan's Code for main sections ----- */
+.main {
+  display: grid;
+  height: fit-content;
+  gap: 10px;
+  text-align: left;
+
+    div {
+      width: 80%;
+      margin-left: 10px;
+      background: linear-gradient(#446aa070, #d8dbe2);
+      border: ridge 5px #000000;
+
+    div[role=article]:nth-child(even) {
+      justify-self: right;
+      margin-left: 0;
+      margin-right: 10px;
+  }
+}
+
