@@ -11,8 +11,9 @@
 html {
   margin: 0;
   padding: 0;
+  background: linear-gradient(#446aa070, #d8dbe2, #4b3220 130%);
 }
-body {
+/* body {
   font: 75% georgia, sans-serif;
   line-height: 1.88889;
   color: #555753;
@@ -20,40 +21,44 @@ body {
     bottom right;
   margin: 0;
   padding: 0;
-}
+} */
 p {
   margin-top: 0;
   text-align: justify;
 }
+
 h3 {
-  font: italic normal 1.4em georgia, sans-serif;
+  font: "Times New Roman", Verdana, Arial, sans-serif;
   letter-spacing: 1px;
   margin-bottom: 0;
-  color: #7d775c;
+  color: #446aa0;
 }
+
 a:link {
   font-weight: bold;
   text-decoration: none;
-  color: #b7a5df;
+  color: #446aa0;
 }
+
 a:visited {
   font-weight: bold;
   text-decoration: none;
-  color: #d4cddc;
+  color: #4b3220;
 }
+
 a:hover,
 a:focus,
 a:active {
   text-decoration: underline;
-  color: #9685ba;
+  color: #000000;
 }
+
 abbr {
   border-bottom: none;
 }
 
 /* specific divs */
 .page-wrapper {
-  background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left;
   padding: 0 175px 0 110px;
   margin: 0;
   position: relative;
@@ -64,52 +69,46 @@ abbr {
   width: 100%;
 }
 
-header h1 {
-  background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top
-    left;
-  margin-top: 10px;
-  display: block;
-  width: 219px;
-  height: 87px;
-  float: left;
-
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+h1 {
+  background: #47515e;
+  color: #fff;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 200%;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  border-radius: 40px;
 }
-header h2 {
-  background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top
-    left;
-  margin-top: 58px;
-  margin-bottom: 40px;
-  width: 200px;
-  height: 18px;
-  float: right;
 
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-header {
-  padding-top: 20px;
-  height: 87px;
+h2 {
+  font-family: "Trebuchet MS", arial, sans-serif;
+  text-align: center;
+  font-size: 200%;
 }
 
 .summary {
   clear: both;
-  margin: 20px 20px 20px 10px;
-  width: 160px;
-  float: left;
+  margin: 20px 20px 50px 20px;
+  font-style: italic;
 }
+
 .summary p {
-  font: italic 1.1em/2.2 georgia;
+  font: "Trebuchet MS", arial, sans-serif;
   text-align: center;
 }
 
 .preamble {
+  text-align: center;
   clear: right;
   padding: 0px 10px 0 10px;
+  margin-bottom: 20px;
 }
+
+.preamble p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .supporting {
   padding-left: 10px;
   margin-bottom: 40px;
@@ -118,6 +117,7 @@ header {
 footer {
   text-align: center;
 }
+
 footer a:link,
 footer a:visited {
   margin-right: 20px;
@@ -129,79 +129,60 @@ footer a:visited {
   top: 0;
   right: 0;
 }
+
 .sidebar .wrapper {
   font: 10px verdana, sans-serif;
-  background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left
-    repeat-y;
+  color: #4b3220;
   padding: 10px;
   margin-top: 150px;
-  width: 130px;
+  width: 150px;
 }
+
 .sidebar h3.select {
-  background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top
-    left;
+  color: #446aa0;
   margin: 10px 0 5px 0;
   width: 97px;
   height: 16px;
-
-  text-indent: 100%;
   white-space: nowrap;
-  overflow: hidden;
 }
+
 .sidebar h3.archives {
-  background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top
-    left;
+
   margin: 25px 0 5px 0;
   width: 57px;
   height: 14px;
-
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }
+
 .sidebar h3.resources {
-  background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top
-    left;
+
   margin: 25px 0 5px 0;
   width: 63px;
   height: 10px;
-
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .sidebar ul {
   margin: 0;
   padding: 0;
 }
+
 .sidebar li {
   line-height: 1.3em;
-  background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top
-    center;
+
   display: block;
   padding-top: 5px;
   margin-bottom: 5px;
-  list-style-type: none;
+  border-bottom: 1px solid #4b32203f;
 }
+
 .sidebar li a:link {
-  color: #988f5e;
+  color: #000000;
 }
+
 .sidebar li a:visited {
-  color: #b3ae94;
+  color: #446aa0;
 }
 
-.extra1 {
-  background: transparent url(http://csszengarden.com/001/cr2.gif) top left
-    no-repeat;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  width: 148px;
-  height: 110px;
-}
-
-/* ----- Jordan's Code for main sections ----- */
+/* ----- Jordan's Code ----- */
 .main {
   display: grid;
   height: fit-content;
@@ -209,17 +190,29 @@ footer a:visited {
   text-align: left;
 }
 
+.main p {
+  padding: 0 20px 0 20px;
+}
+
+.main h3 {
+  padding: 0 10px 10px 10px;
+}
+
 .main div {
   width: 80%;
   margin-left: 10px;
   background: linear-gradient(#446aa070, #d8dbe2);
   border: ridge 5px #000000;
-}
-
-.main div[role="article"]:nth-child(even) {
+  }
+  
+.main div[role=article]:nth-child(even) {
   justify-self: right;
   margin-left: 0;
   margin-right: 10px;
+}
+
+.supporting h3, .preamble h3 {
+  font-size: 250%;
 }
 
 /* ----- ----- */
