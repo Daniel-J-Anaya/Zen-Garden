@@ -190,7 +190,7 @@ footer {
 /* Sidebar and Header by Daniel Anaya */
 html {
 	background-image: url("image/zenGardenBackground.jpg");
-  background-postion: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -223,6 +223,14 @@ header {
 #zen-supporting h3 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+#zen-intro h1{
+  font-family: "major-mono-display", sans-serif;
+}
+
+#zen-intro h2{
+  font-family: "ysans-standard", sans-serif;
 }
 
 .sidebar {
