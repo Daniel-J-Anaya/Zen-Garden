@@ -138,8 +138,9 @@ footer {
 .main div {
   width: 80%;
   margin-left: 10px;
-  background: linear-gradient(#446aa070 -50%, #d8dbe2);
+  background: linear-gradient(#cdded2ef, #fdffddef);
   border: ridge 5px #000000;
+  border-radius: 15px;
   }
   
 .main div[role=article]:nth-child(even) {
